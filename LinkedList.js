@@ -20,6 +20,15 @@ class LinkedList {
         }
         return current
     }
+    print() {
+        let output = ''
+        let current = this.head
+        while (current) {
+            output = `${output}${current.value} ->`
+            current = current.next
+        }
+        console.log(`${output}null`)
+    }
 }
 
 
