@@ -21,6 +21,11 @@ class LinkedList {
         return current
     }
 
+    removeHead() {
+        this.head = this.head.next
+        this.length--
+    }
+
     insertAtIndex(index, value) {
         if (index === 0) return this.insertAtHead(value)
 

@@ -100,3 +100,14 @@ describe('#getByIndex', () => {
   })
 })
   })
+
+  describe('#removeHead', () => {
+    test('removes the head', () => {
+        const ll = new LinkedList.fromValues(10, 20, 30)
+        ll.removeHead()
+
+        expect(ll.head.value).toBe(20)
+        expect(ll.length).toBe(2)
+
+    })
+  })
