@@ -91,12 +91,12 @@ describe('#getByIndex', () => {
     test('insert at the given index', () => {
         const ll = LinkedList.fromValues(10, 20, 30, 40)
 
-            ll.insertAtIndex(2, 30)
+            ll.insertAtIndex(2, 50)
             const node = ll.getByIndex(2)
 
-            expect(node.value).toBe(30)
-            expect(node.next.value).toBe(10)
-            expect(ll.length).toBe(3)
+            expect(node.value).toBe(50)
+            expect(node.next.value).toBe(30)
+            expect(ll.length).toBe(5)
   })
 })
   })
